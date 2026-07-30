@@ -12,3 +12,4 @@ langchain-text-splitters==0.0.1
 python-multipart>=0.0.9
 langchain-text-splitters
 ollama
+sentence-transformers>=2.7.0
