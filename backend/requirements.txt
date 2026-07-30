@@ -1,0 +1,10 @@
+# NEW dependencies (not in the existing project-level requirements.txt)
+# All LangChain, ChromaDB, FastAPI, Pydantic, uvicorn etc. are already
+# covered by the parent directory's requirements.txt.
+#
+# Install from parent first, then add these:
+#   pip install -r ../requirements.txt
+#   pip install -r requirements.txt
+
+python-multipart>=0.0.9
+# sse-starlette>=2.0.0   # Uncomment when SSE streaming is added later

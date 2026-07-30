@@ -1,0 +1,223 @@
+{
+  "82857a79-b3e4-4301-8492-aef098f2fbf1": {},
+  "5e69736b-7e95-4eda-bba1-9771c866c40c": {},
+  "82777b41-a4cf-4cea-a91c-e9d3c9ddd33b": {
+    "vector_store_name": "docmind_1784394354263",
+    "llm_provider": "Google",
+    "selected_model": "gpt-3.5-turbo-0125",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "9c5e3529-8afa-4c4f-915d-307e2efeed7b": {},
+  "b06eec8d-dd49-40d5-b655-4cd19d239e8d": {
+    "vector_store_name": "docmind_1784815074501",
+    "llm_provider": "Google",
+    "selected_model": "gemini-pro",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "ac621b88-59c5-4083-a1e5-7ac1cd9d60cf": {
+    "vector_store_name": "docmind_1784816385722",
+    "llm_provider": "Google",
+    "selected_model": "gemini-pro",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "4bf0045d-4942-4b42-861d-585788d7b8d3": {
+    "vector_store_name": "docmind_1784816533198",
+    "llm_provider": "Google",
+    "selected_model": "gemini-pro",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "424980a2-c845-4f33-bb47-b3648730a8d9": {
+    "vector_store_name": "docmind_1784824137759",
+    "llm_provider": "Google",
+    "selected_model": "gemini-pro",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "8c697406-9a24-4b4c-99cf-2136a6f4feef": {
+    "vector_store_name": "docmind_1784900473892",
+    "llm_provider": "Google",
+    "selected_model": "gemini-pro",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "6958792a-52c4-4636-a5e6-1eeaca7fe8a6": {
+    "vector_store_name": "docmind_1784963098784",
+    "llm_provider": "Google",
+    "selected_model": "gemini-pro",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "7200c9e1-7fb2-4058-bee4-69005d066e1d": {
+    "vector_store_name": "docmind_1785079009711",
+    "llm_provider": "Google",
+    "selected_model": "gemini-pro",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "203b29b2-60b9-4a82-b392-8242d4585035": {
+    "vector_store_name": "docmind_1785156372520",
+    "llm_provider": "Google",
+    "selected_model": "gemini-pro",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "7cc2b9bf-b812-4107-829c-1f15b018ddd8": {
+    "vector_store_name": "docmind_1785157322138",
+    "llm_provider": "Google",
+    "selected_model": "gemini-pro",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "4b0df91c-265c-449b-8278-22aac5e3a64b": {
+    "vector_store_name": "docmind_1785170449434",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "2f249181-3020-4cac-98ed-222197a3ed6b": {
+    "vector_store_name": "docmind_1785170884705",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "2d9aecd3-76b4-4088-b375-f4c21f116c36": {
+    "vector_store_name": "docmind_1785172349167",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "0df993e5-3168-4bed-be2c-40dec5ad0814": {},
+  "38459c3d-ae69-442d-9059-98fe94582757": {},
+  "e415c6c0-ad85-41c1-9d00-0cbec2d6940f": {
+    "vector_store_name": "docmind_1785221896745",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "64e5eb87-0305-456b-ab00-7a28d50f7ed7": {
+    "vector_store_name": "docmind_1785222286028",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "ac00a92e-0fa3-4352-9492-37407f550213": {
+    "vector_store_name": "docmind_1785253510209",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "52f5a525-15e8-4942-a944-032d07d485dc": {
+    "vector_store_name": "docmind_1785254956316",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "e67b8bfd-29df-4ef2-9f5f-04bf7fd7936b": {
+    "vector_store_name": "docmind_1785255535652",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "7b397b15-b324-419a-8c81-832fc116a004": {
+    "vector_store_name": "docmind_1785257354687",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "2d08b8cd-cd55-4d0d-bdcd-36be6e48e7eb": {
+    "vector_store_name": "docmind_1785310860498",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "de28d9a3-61d3-4d1d-9351-a6f15c1a9f7c": {
+    "vector_store_name": "docmind_1785341235307",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "170fa815-84cb-4e56-8b41-6f08128fc54c": {
+    "vector_store_name": "docmind_1785341419686",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "1e979ca2-c4ad-46df-9fd8-20c040eba1e7": {
+    "vector_store_name": "docmind_1785342113042",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  },
+  "a824ced9-c8c1-4b42-b5d8-bb319425bf07": {
+    "vector_store_name": "docmind_1785419143537",
+    "llm_provider": "Google",
+    "selected_model": "gemini-2.5-flash",
+    "temperature": 0.5,
+    "top_p": 0.95,
+    "retriever_type": "Contextual compression",
+    "assistant_language": "english"
+  }
+}
