@@ -9,7 +9,6 @@ logger = logging.getLogger(__name__)
 def _log(msg):
     logger.info(f"[{datetime.now().isoformat()}] {msg}")
 
-from langchain_openai import OpenAIEmbeddings
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
 from langchain_community.document_loaders import (
@@ -43,7 +42,6 @@ from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory, ConversationSummaryBufferMemory
 
-from langchain_openai import ChatOpenAI
 from langchain_community.llms import HuggingFaceHub
 
 from langchain_core.language_models.llms import LLM
@@ -134,6 +132,7 @@ def split_documents_to_chunks(documents):
 def select_embeddings_model(provider, openai_api_key="", google_api_key="", hf_api_key=""):
     _log(f"select_embeddings_model: provider={provider}, has_openai_key={bool(openai_api_key)}, has_google_key={bool(google_api_key)}, has_hf_key={bool(hf_api_key)}")
     if provider == "OpenAI":
+        from langchain_openai import OpenAIEmbeddings
         embeddings = OpenAIEmbeddings(api_key=openai_api_key)
     if provider == "Google":
         embeddings = HuggingFaceEmbeddings(
@@ -255,6 +254,7 @@ def create_memory(model_name="gpt-3.5-turbo", openai_api_key="", memory_max_toke
     if model_name == "gpt-3.5-turbo":
         if memory_max_token is None:
             memory_max_token = 1024
+        from langchain_openai import ChatOpenAI
         memory = ConversationSummaryBufferMemory(
             max_token_limit=memory_max_token,
             llm=ChatOpenAI(
@@ -343,6 +343,7 @@ Standalone question:""",
 
     if llm_provider == "OpenAI":
         _log("create_ConversationalRetrievalChain: creating OpenAI LLMs")
+        from langchain_openai import ChatOpenAI
         standalone_query_generation_llm = ChatOpenAI(
             api_key=openai_api_key,
             model=selected_model,
