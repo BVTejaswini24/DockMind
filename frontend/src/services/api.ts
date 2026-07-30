@@ -7,8 +7,11 @@ import type {
   HealthResponse,
 } from '../types'
 
+const API_URL =
+  import.meta.env.VITE_API_URL || 'http://localhost:8000'
+
 const api = axios.create({
-  baseURL: 'http://localhost:8000',
+  baseURL: API_URL,
   timeout: 120000,
   headers: { 'Content-Type': 'application/json' },
 })
@@ -37,7 +40,7 @@ export async function sendChat(
   prompt: string,
   llmProvider: string = 'Google',
 ): Promise<ChatResponse> {
-  console.log("POSTING TO:", "http://localhost:8000/chat");
+  console.log("POSTING TO:", api.defaults.baseURL + "/chat");
   console.log({
     session_id: sessionId,
     prompt,
