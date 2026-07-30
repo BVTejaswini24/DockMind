@@ -9,3 +9,6 @@
 python-multipart>=0.0.9
 # sse-starlette>=2.0.0   # Uncomment when SSE streaming is added later
 langchain-text-splitters==0.0.1
+python-multipart>=0.0.9
+langchain-text-splitters
+ollama
