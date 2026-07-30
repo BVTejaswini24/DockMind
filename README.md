@@ -1,39 +1,245 @@
-# RAG chatbot powered by 🔗 Langchain, OpenAI, Google Generative AI and Hugging Face 🤗
+# 🧠 DocMind AI
 
-<div align="center">
-  <img src="https://github.com/AlaGrine/RAG_chatabot_with_Langchain/blob/main/data/docs/RAG_architecture.png" >
-  <figcaption>RAG architecture with Langchain components.</figcaption>
-</div>
+> An intelligent AI-powered document analysis platform that lets users upload documents, chat with them using Retrieval-Augmented Generation (RAG), manage conversations, and extract insights with source citations.
 
-## Project Overview <a name="overview"></a>
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.116-009688?logo=fastapi)
+![Python](https://img.shields.io/badge/Python-3.11-yellow?logo=python)
+![LangChain](https://img.shields.io/badge/LangChain-RAG-success)
+![ChromaDB](https://img.shields.io/badge/VectorDB-ChromaDB-purple)
 
-Although Large Language Models (LLMs) are powerful and capable of generating creative content, they can produce outdated or incorrect information as they are trained on static data. To overcome this limitation, Retrieval Augmented Generation (RAG) systems can be used to connect the LLM to external data and obtain more reliable answers.
+---
 
-The aim of this project is to build a RAG chatbot in Langchain powered by [OpenAI](https://platform.openai.com/overview), [Google Generative AI](https://ai.google.dev/?hl=en) and [Hugging Face](https://huggingface.co/) **APIs**. You can upload documents in txt, pdf, CSV, or docx formats and chat with your data. Relevant documents will be retrieved and sent to the LLM along with your follow-up questions for accurate answers.
+## 📖 Overview
 
-Throughout this project, we examined each component of the RAG system from document loader to conversational retrieval chain. Additionally, we developed a user interface using [streamlit](https://streamlit.io/) application.
+DocMind AI is an AI-powered knowledge assistant built using **Retrieval-Augmented Generation (RAG)**.
 
-## Installation <a name="installation"></a>
+Instead of relying only on an LLM's training data, DocMind AI allows users to upload their own documents and ask natural language questions. Relevant document chunks are retrieved using vector search and provided to the AI model to generate accurate, context-aware responses.
 
-This project requires Python 3 and the following Python libraries installed:
+The application includes a premium modern dashboard, conversation management, document organization, citations, and export functionality.
 
-`langchain` ,`langchain-openai`, `langchain-google-genai`, `chromadb`, `streamlit`, `streamlit`
+---
 
-The full list of requirements can be found in `requirements.txt`
+# ✨ Features
 
-## Instructions <a name="instructions"></a>
+## 📄 Smart Document Management
 
-To run the app locally:
+- Upload PDF, DOCX and TXT documents
+- Search uploaded documents
+- Grid/List view
+- Upload progress tracking
+- Persistent document storage
 
-1. Create a virtual environment: `python -m venv langchain_env`
-2. Activate the virtual environment : `.\langchainenv\Scripts\activate` on Windows.
-3. Run the following command in the directory: `cd RAG_Chatabot_Langchain`
-4. Install the required dependencies `pip install -r requirements.txt`
-5. Start the app: `streamlit run RAG_app.py`
-6. In the sidebar, select the LLM provider (OpenAI, Google Generative AI or HuggingFace), choose an LLM (GPT-3.5, GPT-4, Gemini-pro or Mistral-7B-Instruct-v0.2), adjust its parameters, and insert your API keys.
-7. Create or load a Chroma vectorstore.
-8. Chat with your documents: ask questions and get 🤖 AI answers.
+---
 
-## Blog post <a name="blog_post"></a>
+## 💬 AI Chat
 
-I wrote a blog post about this project. You can find it [here](https://medium.com/@alaeddine.grine/rag-chatbot-powered-by-langchain-openai-google-generative-ai-and-hugging-face-apis-6a9b9d7d59db)
+- Retrieval-Augmented Generation (RAG)
+- Context-aware conversations
+- Streaming AI responses
+- Source citations
+- Conversation history
+- Automatic conversation titles
+
+---
+
+## 📚 Conversation Management
+
+- Rename conversations
+- Delete conversations
+- Pin important conversations
+- Search conversations
+- Group conversations
+
+Categories include:
+
+- Today
+- Yesterday
+- Last 7 Days
+- Older
+
+---
+
+## 📤 Export Conversations
+
+Export conversations as:
+
+- PDF
+- Markdown (.md)
+- Text (.txt)
+
+---
+
+## 📊 Dashboard
+
+Real-time dashboard showing:
+
+- Total Documents
+- Total Conversations
+- Total Questions
+- Pinned Conversations
+- Last Upload Date
+- Recent Activity
+
+---
+
+## 👍 AI Feedback
+
+Users can provide feedback on responses using:
+
+- 👍 Like
+- 👎 Dislike
+
+---
+
+## 📑 Expandable Citations
+
+Each AI response includes:
+
+- Document name
+- Page number
+- Confidence score
+- Expandable source preview
+- Full retrieved context
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router
+- Lucide React
+
+---
+
+## Backend
+
+- FastAPI
+- Python
+- LangChain
+- ChromaDB
+- OpenAI API
+- Google Generative AI
+- Sentence Transformers
+
+---
+
+# ⚙️ Project Structure
+
+```
+DocMind/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── routers/
+│   ├── services/
+│   ├── models/
+│   └── main.py
+│
+├── rag_core.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# 🚀 Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/BVTejaswini24/DockMind.git
+
+cd DockMind
+```
+
+---
+
+## Backend
+
+```bash
+cd backend
+
+pip install -r ../requirements.txt
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+```
+
+Backend runs at
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## Frontend
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+Frontend runs at
+
+```
+http://localhost:3000
+```
+
+---
+
+# 📷 Screenshots
+
+Add screenshots here:
+
+- Landing Page
+- Dashboard
+- Chat Interface
+- Documents Page
+- Conversations
+- Settings
+
+---
+
+# Future Improvements
+
+- Multi-document chat
+- Authentication with OAuth
+- Cloud storage integration
+- Shared workspaces
+- Voice interaction
+- Dark/Light themes
+- AI summaries
+- Mobile optimization
+
+---
+
+# 👩‍💻 Developer
+
+**Tejaswini BV**
+
+GitHub
+
+https://github.com/BVTejaswini24
+
+---
+
+# 📄 License
+
+This project is developed for educational and portfolio purposes.
