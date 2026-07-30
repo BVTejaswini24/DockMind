@@ -46,7 +46,10 @@ from langchain_community.llms import HuggingFaceHub
 
 from langchain_core.language_models.llms import LLM
 
-import ollama
+try:
+    import ollama
+except ImportError:
+    ollama = None
 
 
 class OllamaLLM(LLM):
@@ -54,6 +57,10 @@ class OllamaLLM(LLM):
     temperature: float = 0.5
 
     def _call(self, prompt, stop=None, run_manager=None, **kwargs):
+        if ollama is None:
+            raise ImportError(
+                "The 'ollama' package is not installed. Install it to use the Ollama provider."
+            )
         response = ollama.chat(
             model=self.model,
             messages=[{"role": "user", "content": prompt}],
@@ -66,6 +73,10 @@ class OllamaLLM(LLM):
 
 
 def ollama_generate(prompt, model="llama3.2", temperature=0.5):
+    if ollama is None:
+        raise ImportError(
+            "The 'ollama' package is not installed. Install it to use the Ollama provider."
+        )
     response = ollama.chat(
         model=model,
         messages=[{"role": "user", "content": prompt}],
