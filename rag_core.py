@@ -146,8 +146,9 @@ def select_embeddings_model(provider, openai_api_key="", google_api_key="", hf_a
         from langchain_openai import OpenAIEmbeddings
         embeddings = OpenAIEmbeddings(api_key=openai_api_key)
     if provider == "Google":
-        embeddings = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2"
+        from langchain_google_genai import GoogleGenerativeAIEmbeddings
+        embeddings = GoogleGenerativeAIEmbeddings(
+            model="models/embedding-001", google_api_key=google_api_key
         )
     if provider == "HuggingFace":
         embeddings = HuggingFaceInferenceAPIEmbeddings(
