@@ -52,7 +52,7 @@ def upload_documents(
         if GOOGLE_API_KEY and not api_key_google and not api_key_openai:
             llm_provider = "Google"
             api_key_google = GOOGLE_API_KEY
-            selected_model = "gemini-2.5-flash"
+            selected_model = "gemini-2.0-flash"
 
         if retriever_type == "Cohere reranker" and not api_key_cohere:
             retriever_type = "Contextual compression"

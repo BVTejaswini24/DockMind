@@ -572,7 +572,7 @@ def rebuild_chain_from_store(
     vector_store_name: str,
     llm_provider: str = "Google",
     google_api_key: str = "",
-    selected_model: str = "gemini-2.5-flash",
+    selected_model: str = "gemini-2.0-flash",
     temperature: float = 0.5,
     top_p: float = 0.95,
     retriever_type: str = "Contextual compression",
