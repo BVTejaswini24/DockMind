@@ -368,9 +368,29 @@ Standalone question:""",
             model_kwargs={"top_p": top_p},
         )
     if llm_provider == "Google":
+        _log("create_ConversationalRetrievalChain: creating Google LLMs")
+        from langchain_google_genai import ChatGoogleGenerativeAI
+        standalone_query_generation_llm = ChatGoogleGenerativeAI(
+            model=selected_model,
+            google_api_key=google_api_key,
+            temperature=0.1,
+        )
+        response_generation_llm = ChatGoogleGenerativeAI(
+            model=selected_model,
+            google_api_key=google_api_key,
+            temperature=temperature,
+            top_p=top_p,
+        )
+    if llm_provider == "Ollama":
         _log("create_ConversationalRetrievalChain: creating Ollama LLM")
-        standalone_query_generation_llm = OllamaLLM(model="llama3.2", temperature=0.1)
-        response_generation_llm = OllamaLLM(model="llama3.2", temperature=temperature)
+        standalone_query_generation_llm = OllamaLLM(
+            model="llama3.2",
+            temperature=0.1,
+        )
+        response_generation_llm = OllamaLLM(
+            model="llama3.2",
+            temperature=temperature,
+        )
 
     if llm_provider == "HuggingFace":
         _log("create_ConversationalRetrievalChain: creating HuggingFace LLMs")
