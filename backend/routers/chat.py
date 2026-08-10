@@ -40,7 +40,7 @@ def chat(request: ChatRequest):
                 vector_store_name=vector_store_name,
                 llm_provider=session.get("llm_provider", "Google"),
                 google_api_key=GOOGLE_API_KEY,
-                selected_model=session.get("selected_model", "gemini-2.0-flash"),
+                selected_model=session.get("selected_model", "gemini-2.5-flash"),
                 temperature=session.get("temperature", 0.5),
                 top_p=session.get("top_p", 0.95),
                 retriever_type=session.get("retriever_type", "Contextual compression"),
