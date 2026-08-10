@@ -1,245 +1,84 @@
-# 🧠 DocMind AI
+# 🧠 DockMind — AI-Powered Document Intelligence & RAG Chatbot
 
-> An intelligent AI-powered document analysis platform that lets users upload documents, chat with them using Retrieval-Augmented Generation (RAG), manage conversations, and extract insights with source citations.
+<p align="center">
+  <strong>Upload documents. Understand them. Chat with them.</strong>
+</p>
 
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.116-009688?logo=fastapi)
-![Python](https://img.shields.io/badge/Python-3.11-yellow?logo=python)
-![LangChain](https://img.shields.io/badge/LangChain-RAG-success)
-![ChromaDB](https://img.shields.io/badge/VectorDB-ChromaDB-purple)
+<p align="center">
+  A full-stack Retrieval-Augmented Generation (RAG) application that allows users to upload documents and interact with their content using AI-powered semantic search and conversational question answering.
+</p>
 
----
+<p align="center">
 
-## 📖 Overview
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/Backend-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/RAG-LangChain-1C3C3C?style=for-the-badge)
+![ChromaDB](https://img.shields.io/badge/Vector_DB-ChromaDB-FF6F00?style=for-the-badge)
+![Google Gemini](https://img.shields.io/badge/LLM-Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Ollama](https://img.shields.io/badge/Local%20LLM-Ollama-black?style=for-the-badge)
+![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel)
+![Render](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
 
-DocMind AI is an AI-powered knowledge assistant built using **Retrieval-Augmented Generation (RAG)**.
-
-Instead of relying only on an LLM's training data, DocMind AI allows users to upload their own documents and ask natural language questions. Relevant document chunks are retrieved using vector search and provided to the AI model to generate accurate, context-aware responses.
-
-The application includes a premium modern dashboard, conversation management, document organization, citations, and export functionality.
-
----
-
-# ✨ Features
-
-## 📄 Smart Document Management
-
-- Upload PDF, DOCX and TXT documents
-- Search uploaded documents
-- Grid/List view
-- Upload progress tracking
-- Persistent document storage
+</p>
 
 ---
 
-## 💬 AI Chat
+## 🌐 Live Demo
 
-- Retrieval-Augmented Generation (RAG)
-- Context-aware conversations
-- Streaming AI responses
-- Source citations
-- Conversation history
-- Automatic conversation titles
+> 🚀 **Production deployment:**  
+> `https://dock-mind-git-main-tejaswinis-projects-ba64286e.vercel.app/`
 
----
+The application is deployed as a full-stack system:
 
-## 📚 Conversation Management
-
-- Rename conversations
-- Delete conversations
-- Pin important conversations
-- Search conversations
-- Group conversations
-
-Categories include:
-
-- Today
-- Yesterday
-- Last 7 Days
-- Older
+- **Frontend:** Vercel
+- **Backend:** Render
+- **LLM:** Google Gemini
+- **Embeddings:** Google Generative AI Embeddings
+- **Vector Database:** ChromaDB
+- **RAG Framework:** LangChain
 
 ---
 
-## 📤 Export Conversations
+# ✨ What is DockMind?
 
-Export conversations as:
+DockMind is an AI-powered document intelligence application built around the concept of **Retrieval-Augmented Generation (RAG)**.
 
-- PDF
-- Markdown (.md)
-- Text (.txt)
+Instead of sending an entire document directly to an AI model, DockMind:
 
----
+1. Accepts uploaded documents.
+2. Extracts their text.
+3. Splits the content into manageable chunks.
+4. Converts those chunks into vector embeddings.
+5. Stores the embeddings inside a vector database.
+6. Retrieves the most relevant document sections for a user's question.
+7. Sends the retrieved context to an LLM.
+8. Generates a context-aware conversational answer.
 
-## 📊 Dashboard
-
-Real-time dashboard showing:
-
-- Total Documents
-- Total Conversations
-- Total Questions
-- Pinned Conversations
-- Last Upload Date
-- Recent Activity
+This allows users to ask questions about their own documents without manually searching through hundreds of pages.
 
 ---
 
-## 👍 AI Feedback
+# 🎯 Core Features
 
-Users can provide feedback on responses using:
+## 📄 Document Upload
 
-- 👍 Like
-- 👎 Dislike
+Users can upload documents through the web interface.
 
----
+The backend processes the uploaded documents using a document loading and text-processing pipeline.
 
-## 📑 Expandable Citations
+### Processing flow
 
-Each AI response includes:
-
-- Document name
-- Page number
-- Confidence score
-- Expandable source preview
-- Full retrieved context
-
----
-
-# 🛠 Tech Stack
-
-## Frontend
-
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- Framer Motion
-- React Router
-- Lucide React
-
----
-
-## Backend
-
-- FastAPI
-- Python
-- LangChain
-- ChromaDB
-- OpenAI API
-- Google Generative AI
-- Sentence Transformers
-
----
-
-# ⚙️ Project Structure
-
-```
-DocMind/
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-├── backend/
-│   ├── routers/
-│   ├── services/
-│   ├── models/
-│   └── main.py
-│
-├── rag_core.py
-├── requirements.txt
-└── README.md
-```
-
----
-
-# 🚀 Installation
-
-## Clone Repository
-
-```bash
-git clone https://github.com/BVTejaswini24/DockMind.git
-
-cd DockMind
-```
-
----
-
-## Backend
-
-```bash
-cd backend
-
-pip install -r ../requirements.txt
-
-pip install -r requirements.txt
-
-uvicorn main:app --reload
-```
-
-Backend runs at
-
-```
-http://127.0.0.1:8000
-```
-
----
-
-## Frontend
-
-```bash
-cd frontend
-
-npm install
-
-npm run dev
-```
-
-Frontend runs at
-
-```
-http://localhost:3000
-```
-
----
-
-# 📷 Screenshots
-
-Add screenshots here:
-
-- Landing Page
-- Dashboard
-- Chat Interface
-- Documents Page
-- Conversations
-- Settings
-
----
-
-# Future Improvements
-
-- Multi-document chat
-- Authentication with OAuth
-- Cloud storage integration
-- Shared workspaces
-- Voice interaction
-- Dark/Light themes
-- AI summaries
-- Mobile optimization
-
----
-
-# 👩‍💻 Developer
-
-**Tejaswini BV**
-
-GitHub
-
-https://github.com/BVTejaswini24
-
----
-
-# 📄 License
-
-This project is developed for educational and portfolio purposes.
+```text
+Document
+   ↓
+Document Loader
+   ↓
+Text Extraction
+   ↓
+Text Chunking
+   ↓
+Embedding Generation
+   ↓
+Chroma Vector Store
