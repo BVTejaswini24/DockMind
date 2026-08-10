@@ -778,21 +778,5 @@ This project is available under the MIT License.
 
 ---
 
-## ⭐ If you found this project interesting
 
-Feel free to explore the repository, try the live demo, and experiment with the RAG architecture.
-
-**Built with React • FastAPI • LangChain • Gemini • ChromaDB • Ollama**
-
-```
-
-### One thing before you paste it
-
-Your **Live Demo link is included near the top and again near the bottom**:
-
-**https://dock-mind-git-main-tejaswinis-projects-ba64286e.vercel.app/**
-
-So when someone opens your GitHub repository, the first thing they see is the project + **Live Demo**.
-
-Also, I deliberately did **not** claim that Ollama is your deployed production LLM. Based on the audit you gave me, that would be inaccurate. The README instead says **Gemini is the production path and Ollama is supported for local experimentation**, which is much safer to say in a portfolio/interview.
 ```
